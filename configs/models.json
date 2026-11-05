@@ -1,0 +1,8 @@
+{
+  "qwen2.5-1.5b-instruct": {"hf_id": "Qwen/Qwen2.5-1.5B-Instruct"},
+  "llama-3-8b-instruct":   {"hf_id": "meta-llama/Meta-Llama-3-8B-Instruct"},
+  "ministral-8b-instruct": {"hf_id": "mistralai/Ministral-8B-Instruct-2410"},
+  "gemma-3-12b-it":        {"hf_id": "google/gemma-3-12b-it", "attn_implementation": "eager"},
+  "qwen3-14b":             {"hf_id": "Qwen/Qwen3-14B"},
+  "qwen2.5-72b-instruct":  {"hf_id": "Qwen/Qwen2.5-72B-Instruct", "quantize_4bit": true, "batch_size": 2}
+}

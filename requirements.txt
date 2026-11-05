@@ -1,0 +1,11 @@
+# Versions used to test this release; newer versions are expected to work.
+numpy>=1.24
+torch>=2.1            # tested with 2.6.0
+scikit-learn>=1.3     # tested with 1.7.2
+optuna>=3.4           # tested with 4.7.0
+transformers>=4.51    # tested with 4.51.3 (Gemma-3 / Qwen3 need >= 4.51)
+accelerate>=0.30
+datasets>=2.19        # tested with 3.5.0
+bitsandbytes>=0.43    # 4-bit Qwen2.5-72B only
+tqdm
+pytest>=7
