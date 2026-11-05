@@ -132,7 +132,7 @@ p_correct = clf.predict_proba(load_records("results/qwen3-14b_cruxeval"))
 ```bibtex
 @inproceedings{fakharzadehjahromy2026geometric,
   title     = {Geometric Instability of Hidden-State Trajectories Predicts Reasoning Failures in Large Language Models},
-  author    = {Fakharzadehjahromy, Hoda and Bueff, Andreas C. and Heintz, Fredrik and Tiger, Mattias and Li, Qing and Li, Jiaqi and Geng, Jiahui},
+  author    = {Fakharzadehjahromy, Hoda and Bueff, Andreas and Heintz, Fredrik and Tiger, Mattias and Li, Qing and Li, Jiaqi and Geng, Jiahui},
   booktitle = {Advances in Neural Information Processing Systems},
   year      = {2026}
 }
