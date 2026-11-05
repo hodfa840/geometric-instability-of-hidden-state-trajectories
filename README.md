@@ -116,9 +116,10 @@ p_correct = clf.predict_proba(load_records("results/qwen3-14b_cruxeval"))
 
 ## Notes
 
-* The scoring forward pass runs per sample on the unpadded prompt + response, so the features do
-  not depend on the generation batch size. Numbers can differ slightly from the paper because of
-  GPU non-determinism and library versions.
+* The scoring forward pass runs per sample on the unpadded prompt + response, so for a given
+  response the features do not depend on the batch size. Batched greedy decoding can occasionally
+  produce a different response than `--batch_size 1` (padding changes the numerics). Numbers can
+  also differ slightly from the paper because of GPU non-determinism and library versions.
 * **HumanEval executes model-generated code.** It is disabled unless `--allow_code_execution` is given;
   each program runs in a subprocess with time, memory and file-size limits. Use a sandbox.
 * `records.pkl` and `classifier.pkl` are pickle files: only load files you created yourself.
